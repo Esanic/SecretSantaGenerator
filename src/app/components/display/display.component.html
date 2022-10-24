@@ -1,7 +1,7 @@
 <div class="d-flex flex-row justify-content-between mt-auto">
     <div>
         <label>From</label>
-        <div class="card px-3" style="width:20rem; height:20rem">
+        <div class="card px-3 mb-3" style="width:20vw; min-height:35vh">
             <ul class="list-group list-group-flush" *ngFor="let name of from">
                 <li class="list-group-item" style="text-align:right;">{{name}}</li>
             </ul>
@@ -12,9 +12,9 @@
     
     <div>
         <label>To</label>
-        <div class="card px-3" style="width:20rem; height:20rem">
+        <div class="card px-3" style="width:20vw; min-height:35vh">
             <ul class="list-group list-group-flush" *ngFor="let name of to">
-                <li class="list-group-item" style="text-align:right;">{{name}}</li>
+                <li class="list-group-item">{{name}}</li>
             </ul>
         </div>
     </div>
