@@ -1,0 +1,20 @@
+<div class="d-flex flex-row justify-content-between mt-auto">
+    <div>
+        <label>From</label>
+        <div class="card px-3" style="width:20rem; height:20rem">
+            <ul class="list-group list-group-flush" *ngFor="let name of from">
+                <li class="list-group-item" style="text-align:right;">{{name}}</li>
+            </ul>
+        </div>
+    </div>
+
+    <i class="bi bi-arrow-right mt-auto mb-auto" style="font-size: 3rem; width:8rem; text-align:center;"></i>
+    <div>
+        <label>To</label>
+        <div class="card px-3" style="width:20rem; height:20rem">
+            <ul class="list-group list-group-flush" *ngFor="let name of to">
+                <li class="list-group-item" style="text-align:right;">{{name}}</li>
+            </ul>
+        </div>
+    </div>
+</div>
