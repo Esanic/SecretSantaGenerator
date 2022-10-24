@@ -1,8 +1,8 @@
-<form [formGroup]="namesForm" (submit)="onSubmit()">
+<form class="col-sm-12" [formGroup]="namesForm" (submit)="onSubmit()">
     <div class="d-flex flex-column">
       <label for="names">Type in names of the participants</label>
       <small id="nameHelp" class="form-text text-muted">Type one name on each row</small>
       <textarea class="mb-3 mt-3" id="names" formControlName="names" placeholder="John Doe..." rows="10"></textarea>
-      <button type="submit" class="btn btn-primary">Randomize</button>
+      <button type="submit" class="btn btn-outline-light">Randomize</button>
     </div>
 </form>

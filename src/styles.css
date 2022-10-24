@@ -1,1 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+    background: rgba(133,0,0,1);
+    background: -moz-linear-gradient(180deg, rgba(255,56,56,1) 0%, rgba(166,0,0,1) 65%, rgba(133,0,0,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(255,56,56,1) 0%, rgba(166,0,0,1) 65%, rgba(133,0,0,1) 100%);
+    background: linear-gradient(180deg, rgba(255,56,56,1) 0%, rgba(166,0,0,1) 65%, rgba(133,0,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff3838",endColorstr="#850000",GradientType=1);
+    background-repeat:no-repeat
+}
+
+/* html, body {
+    height:100%;
+} */
+p {
+    color:white;
+}
+
+label{
+    color:white;
+}
+
+hr {
+    color:white;
+}
+
+.text-muted {
+    color: #ddd !important;
+    font-style:italic;
+}
+
+textarea{
+    border-radius:0.375rem;
+}
+
+

@@ -1,20 +1,30 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand ms-auto me-auto" href="#">Secret Santa generator</a>
-</nav>
-<div class="container mt-5">
-  <p>In my family we always randomize who is gonna buy a christmas gift to whom.</p>
-  <p>But all of the generators available online (atleast from what I've found) is way too complex and requires emails and yadayada.<br>
-  So therefore I decided to make this simple generator.</p>
-  <p>Simply type in the names of the participants to the left, press the "randomize"-button and it's all done!</p>
-  <br>
-  <hr>
+<div class="h-100">
+  <nav class="navbar navbar-expand-lg bg-light">
+    <a class="navbar-brand ms-auto me-auto" href="#">Secret Santa generator</a>
+  </nav>
+<div class="d-flex flex-column">
+  <div class="container mt-3">
+    <p>In my family we always randomize who is gonna buy a christmas gift to whom.</p>
+    <p>All of the generators available online (atleast from what I've found) is way too complex and requires emails and yadayada.<br>
+    So therefore I decided to make this simple generator.</p>
+    <p>Simply type in the names of the participants to the left, press the "randomize"-button and it's all done!</p>
+
+    <hr>
+  </div>
+  <div class="container mt-3 px-4 d-flex justify-content-center">
+    <div class="col-12 row gx-5 d-flex column">
+      <div class="col-sm-4">
+        <app-form></app-form>
+      </div>
+
+      <div class="col-sm-8 flex-grow-1">
+        <app-display class="col-12"></app-display>
+      </div>
+    </div>
+  </div>
 </div>
-<div class="container mt-5 d-flex">
-  <div class="col-4">
-    <app-form></app-form>
-  </div>
-  <div class="col-1"></div>
-  <div class="col-7 d-flex flex-row justify-content-between mt-auto">
-    <app-display></app-display>
-  </div>
+  <hr>
+  <footer class="text-center" style="height:10vh;">
+    <p>© 2022 Copyright - Christopher Reineborn</p>
+  </footer>
 </div>
