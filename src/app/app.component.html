@@ -1,35 +1,14 @@
-<div class="h-100">
+
   <nav class="navbar navbar-expand-lg bg-light">
     <a class="navbar-brand ms-auto me-auto align-text-center">
       <img src="assets/images/SSC.png" height="100" width="75" alt="Logo" class="d-inline-block align-text-center me-3 ms-3"/>
       Secret Santa Generator
     </a>
   </nav>
-<div class="d-flex flex-column">
-  <div class="container mt-3">
-    <p>In my and my wife's families we always randomize who is gonna buy a christmas gift to whom.<br>
-      Not does this only save alot of money but it also ease up on the stress that christmas is highly associated with.</p>
-    
-    <p>Although all of the generators available online (atleast from what I've found) is way too complex, requires emails and yadayada.<br>
-    So therefore I decided to make this simple generator.</p>
-    <p>Simply type in the names of the participants to the left, press the "randomize"-button and it's all done!</p>
 
-    <hr>
-  </div>
-  <div class="container mt-3 px-4 d-flex justify-content-center">
-    <div class="col-12 row gx-5 d-flex column">
-      <div class="col-sm-4">
-        <app-form></app-form>
-      </div>
-
-      <div class="col-sm-8 flex-grow-1" style="min-height:47.6vh">
-        <app-display class="col-12"></app-display>
-      </div>
-    </div>
-  </div>
-</div>
+  <router-outlet></router-outlet>
+  
   <hr>
   <footer class="text-center" style="height:10vh;">
     <p>© 2022 Copyright - Christopher Reineborn</p>
   </footer>
-</div>

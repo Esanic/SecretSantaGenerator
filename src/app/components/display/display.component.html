@@ -1,21 +1,33 @@
 <div class="d-flex flex-row justify-content-center" style="margin-top:2.6rem !important">
-    <div class="col-sm-5">
-        <label>From</label>
-        <div class="card px-3 mb-3" style="min-height:30vh">
+    <div class="col-sm-3 mt-auto mb-auto">
+        <h6>From</h6>
+        <div class="card px-3 to-from-card">
             <ul class="list-group list-group-flush" *ngFor="let name of from">
                 <li class="list-group-item" style="text-align:right;">{{name}}</li>
             </ul>
         </div>
     </div>
 
-    <i class="bi bi-arrow-right mt-auto mb-auto col-sm-2" style="font-size: 3rem; width:8rem; text-align:center; color:white;"></i>
+    <i class="bi bi-arrow-right mt-auto mb-auto col-sm-3" style="font-size: 3rem; width:8rem; text-align:center; color:white;"></i>
     
-    <div class="col-sm-5">
-        <label>To</label>
-        <div class="card px-3 mb-3" style="min-height:30vh">
+    <div class="col-sm-3 mt-auto mb-auto">
+        
+        <h6>To</h6>
+        <div class="card px-3 to-from-card">
             <ul class="list-group list-group-flush" *ngFor="let name of to">
                 <li class="list-group-item">{{name}}</li>
             </ul>
         </div>
+    </div>
+
+</div>
+<div class="w-100 pt-5">
+    <div *ngIf="enabledButton == true" class="mx-auto d-flex flex-column" style="width:fit-content">
+        <button type="button" class="btn btn-outline-light mx-auto" (click)="save()">Save this list</button>
+        <small class="form-text text-muted">By saving the list you agree that the names of the participants will be stored in a database.</small>
+    </div>
+    <div *ngIf="enabledLink == true" class="mx-auto d-flex flex-row justify-content-center" style="width:100%">
+        <input id="link" [value]="link" readonly="true" style="width:73%; margin-right:1vw;">
+        <button type="button" class="btn btn-outline-light" [cdkCopyToClipboard]="link" ngbPopover="Copied!">Copy</button>
     </div>
 </div>

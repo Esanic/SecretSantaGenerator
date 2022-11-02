@@ -16,7 +16,7 @@ p {
     color:white;
 }
 
-label{
+label, h6{
     color:white;
 }
 
@@ -33,4 +33,9 @@ textarea{
     border-radius:0.375rem;
 }
 
+.to-from-card {
+    min-height:30vh;
+}
 
+html, body { min-height:100vh }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
