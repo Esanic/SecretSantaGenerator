@@ -16,7 +16,7 @@ export class DisplayComponent implements OnInit {
 
   public enabledButton: boolean = false;
   public enabledLink: boolean = false;
-  public link: string = 'https://esanic.github.io/SecretSantaGenerator/saved?key='
+  public link: string = 'https://esanic.github.io/SecretSantaGenerator/#/saved?key='
   private set: Path = new Path();
 
   constructor(private formService: FormService, private databaseService: DatabaseService, private clipboard: Clipboard) { }
