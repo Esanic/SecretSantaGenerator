@@ -17,6 +17,7 @@ import { DisplaySavedComponent } from './components/display-saved/display-saved.
 import { StartComponent } from './page/start/start.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ClipboardModule } from '@angular/cdk/clipboard';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 const routes: Routes = [
   {path: '', component: StartComponent},
@@ -44,7 +45,7 @@ const routes: Routes = [
     BrowserAnimationsModule,
     ClipboardModule
   ],
-  providers: [],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
