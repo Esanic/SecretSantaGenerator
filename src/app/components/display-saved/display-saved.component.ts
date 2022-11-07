@@ -28,7 +28,6 @@ export class DisplaySavedComponent implements OnInit {
     ).subscribe(data => {
       this.paths = data;
       this.dbEntry = this.paths.find(o => o.key === this.param);
-      console.log(this.dbEntry)
     })
     
 
